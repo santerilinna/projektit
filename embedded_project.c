@@ -1,4 +1,4 @@
-
+//ISO-8859-1
 
 
 //include stdio
@@ -287,7 +287,7 @@ void uartTaskFxn(UArg arg0, UArg arg1) {
             programState = WAITING;
         }
         if (programState == BUTTON1) {  //sends message when sidebutton is pressed, kind of unused
-            sprintf(uart_msg,"id:2251,MSG2:napin käyttötarkoitus = ?,MSG1:sivunappia painettu\0");
+            sprintf(uart_msg,"id:2251,MSG2:napin kÃ¤yttÃ¶tarkoitus = ?,MSG1:sivunappia painettu\0");
             UART_write(uart,uart_msg, strlen(uart_msg) + 1);
             programState = WAITING;
         }
